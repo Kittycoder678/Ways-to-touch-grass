@@ -333,7 +333,7 @@ img#menubar1.grass1{
     position: absolute;
     top: 0;
     left: 0;
-    height: 10%;
+    height: 9%;
     width: 175%;
     z-index: 6;
     padding: 0;
@@ -341,9 +341,9 @@ img#menubar1.grass1{
 
 img#menubar2.grass1{
     position: absolute;
-    top: 12%;
+    top: 8.5%;
     left: 0;
-    height: 8.5%;
+    height: 9%;
     width: 175%;
     z-index: 5;
     padding: 0;
@@ -351,9 +351,9 @@ img#menubar2.grass1{
 
 img#menubar3.grass1{
     position: absolute;
-    top: 12%;
+    top: 17%;
     left: 0;
-    height: 8.5%;
+    height: 9%;
     width: 175%;
     z-index: 4;
     padding: 0;
@@ -361,9 +361,9 @@ img#menubar3.grass1{
 
 img#menubar4.grass1{
     position: absolute;
-    top: 18%;
+    top: 25.5%;
     left: 0;
-    height: 8.5%;
+    height: 9%;
     width: 175%;
     z-index: 3;
     padding: 0;
