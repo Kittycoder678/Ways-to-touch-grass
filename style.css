@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;700&display=swap');
+
+.merienda-title {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-subtitle {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 *{
     margin:0;
     padding:0;
@@ -151,12 +173,12 @@ form p a{
 h1 {
     color: #014C06;
     text-align: center;
-    font-family: "audiowide", sans-serif;
+    font-family: "Merienda", cursive;
     padding: 0.5%;
     margin: 0;
     font-size: 400%;
     text-transform: uppercase;
-    font-weight: 25;
+    font-weight: 600;
     letter-spacing: 2.5px;
     position: relative
 }
@@ -236,7 +258,6 @@ ol {
 
 #menuBars {
     position: absolute;
-    background-color: #C9E9BF;
     top: 0;
     left: 0;
     height: 167%;
@@ -248,7 +269,6 @@ ol {
 
 #menuBarss {
     position: absolute;
-    background-color: #C9E9BF;
     top: 0;
     left: 0;
     height: 100%;
@@ -265,6 +285,8 @@ ol {
     color: black;
     font-family: "fredoka", sans-serif;
     text-decoration: none;
+    z-index:9;
+    position: absolute;
 }
 
 .menu-lint {
@@ -274,6 +296,8 @@ ol {
     color: black;
     font-family: "audiowide", sans-serif;
     text-decoration: none;
+    z-index:9;
+    position: absolute;
 }
 
 .menu-link:hover,
@@ -291,11 +315,13 @@ h4 {
     font-weight: 600;
     font-size: 180%;
     margin-left: 10%;
-    font-family: "audiowide", sans-serif;
+    font-family: "Playfair Display", serif;
     text-decoration: none;
-    margin-top: 5%;
-    margin-bottom: 1%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     padding: 0%;
+    z-index:9;
+    position: absolute;
 }
 
 .current-link {
@@ -335,7 +361,7 @@ img#menubar1.grass1{
     left: 0;
     height: 9%;
     width: 175%;
-    z-index: 6;
+    z-index: 8;
     padding: 0;
 }
 
@@ -345,7 +371,7 @@ img#menubar2.grass1{
     left: 0;
     height: 9%;
     width: 175%;
-    z-index: 5;
+    z-index: 7;
     padding: 0;
 }
 
@@ -355,7 +381,7 @@ img#menubar3.grass1{
     left: 0;
     height: 9%;
     width: 175%;
-    z-index: 4;
+    z-index: 6;
     padding: 0;
 }
 
@@ -365,17 +391,112 @@ img#menubar4.grass1{
     left: 0;
     height: 9%;
     width: 175%;
+    z-index: 5;
+    padding: 0;
+}
+
+img#menubar5.grass1{
+    position: absolute;
+    top: 34%;
+    left: 0;
+    height: 9%;
+    width: 175%;
+    z-index: 4;
+    padding: 0;
+}
+
+img#menubar6.grass1{
+    position: absolute;
+    top: 42.5%;
+    left: 0;
+    height: 9%;
+    width: 175%;
     z-index: 3;
     padding: 0;
 }
 
-img#menubar1.grass2{
+img#menubar7.grass1{
     position: absolute;
-    top: 0;
+    top: 51%;
     left: 0;
-    height: 75%;
+    height: 9%;
+    width: 175%;
+    z-index: 2;
+    padding: 0;
+}
+
+img#menubar8.grass1{
+    position: absolute;
+    top: 59.5%;
+    left: 0;
+    height: 9%;
+    width: 170%;
+    z-index: 1;
+    padding: 0;
+}
+
+img#menubar1.grass1:hover{
+    width: 185%;
+}
+
+img#menubar2.grass1:hover{
+    width: 185%;
+}
+
+img#menubar3.grass1:hover{
+    width: 185%;
+}
+
+img#menubar4.grass1:hover{
+    width: 185%;
+}
+
+img#menubar5.grass1:hover{
+    width: 185%;
+}
+
+img#menubar6.grass1:hover{
+    width: 185%;
+}
+
+img#menubar7.grass1:hover{
+    width: 185%;
+}
+
+img#menubar8.grass1:hover{
+    width: 180%;
+}
+
+img#menubar9.grass2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 80%;
     width: 200%;
     z-index: -1;
     padding: 0;
     filter: drop-shadow(2.5px 2.5px 5px #464646);
+}
+
+img#footer.grass{
+    height: auto;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#footer{
+    padding: 0%;
+    margin: 0%;
+    height:auto;
+    width: 100%;
+    display: block;
+}
+
+body {
+  margin: 0%;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Main (expands), Footer */
+  min-height: 100dvh;
+  padding: 0%; 
 }
