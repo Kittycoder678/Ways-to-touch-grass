@@ -257,14 +257,15 @@ ol {
 }
 
 #menuBars {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 167%;
     width: 15%;
-    z-index: 2;
-    display: none;
+    height: 100vh;
+    background-color: #C9E9BF;
     padding-top: 7%;
+    overflow: hidden;
+    z-index: 10;
 }
 
 #menuBarss {
@@ -281,23 +282,26 @@ ol {
 .menu-link {
     font-size: 140%;
     font-weight: 400;
-    margin-left: 10%;
     color: black;
     font-family: "fredoka", sans-serif;
     text-decoration: none;
     z-index:9;
-    position: absolute;
+    position: relative;
+    display: block;
+    margin: 0 0 0 10%;
+    top:1;
 }
 
 .menu-lint {
     font-size: 180%;
     font-weight: 600;
-    margin-left: 10%;
     color: black;
     font-family: "audiowide", sans-serif;
     text-decoration: none;
     z-index:9;
-    position: absolute;
+    position: relative;
+    display: block;
+    margin: 0 0 0 10%;
 }
 
 .menu-link:hover,
@@ -314,14 +318,13 @@ h4 {
     color: black;
     font-weight: 600;
     font-size: 180%;
-    margin-left: 10%;
     font-family: "Playfair Display", serif;
     text-decoration: none;
-    margin-top: 0%;
-    margin-bottom: 0%;
     padding: 0%;
     z-index:9;
-    position: absolute;
+    position: relative;
+    display: block;
+    margin: 20px 0 0 10%;
 }
 
 .current-link {
